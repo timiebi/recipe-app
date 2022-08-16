@@ -1,0 +1,114 @@
+
+
+.form_section{
+    // display: none;
+    @include tablet{
+        display: block;
+    }
+    .form-section_container{
+        @include tablet{
+            display: flex;
+            padding: 5em;
+            align-items: center;
+            padding-top: 7em;
+            // gap: 1rem;
+        }
+
+        @include desktop{
+            // margin-left: 2em;
+            justify-content: center;
+        }
+
+        .aside_section{
+            @include tablet{
+              
+                // padding-right: 6em;
+            }
+
+            h1{
+                @include tablet{
+                    font-family: $font-family-fraunces;
+                    position: relative;
+                    font-size: $mdx-font-size;
+                    color: #fff;
+                    width: 100%;
+                    padding: 1em;
+                }
+            }
+        }
+        .form-field{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            background: rgba($color_tertiary-100, $alpha: .7);
+            padding: 2em;
+            // position: relative;
+            left: 2.5em;
+            border-radius: 0 8px 8px 0;
+            @include desktop{
+                width: 25rem;
+                justify-content: center;
+            }
+            .input-container{
+                
+                input:focus ~ span,
+                input :valid ~ span{
+                    color: $color_tertiary-400;
+                    // transform: translateX(10px) translateY(-7px);
+                    font-size: 0.8rem;
+                    padding: .2em 12px;
+                    border-left: 2px solid $color_primary-300;
+                    border-right: 2px solid $color_primary-300;
+                    position: relative;
+                    bottom: 1.2em;
+                    font-weight: 600;
+                    background-color: $color_tertiary-700;
+                   
+                }
+                input{
+                    // margin: .6em;
+                    padding: 1em;
+                    border-radius: 10px;
+                    outline: none;
+                    border: none;
+                    background: rgba($color_tertiary-200, $alpha: .5);
+                    width: 90%;
+                    &:focus{
+                        border:1.5px solid $color_primary-300;
+                        background-color: $color_tertiary-700;
+                    }
+                   
+                }
+                span{
+                    position: relative;
+                    left: 2em;
+                    pointer-events: none;
+                    // padding: 18px;
+                    bottom: 1.9em;
+                    text-transform: uppercase;
+                    
+                }
+                .email{
+                    left: 2em;
+                }
+                
+            }
+
+            button{
+                padding: 1em;
+                margin: 1em;
+                border-radius: 5px;
+                outline: none;
+                border: none;
+
+                background: $color_primary-300;
+                cursor: pointer;
+              
+            }
+
+            p{
+                text-align: center;
+            }
+        }
+    }
+}

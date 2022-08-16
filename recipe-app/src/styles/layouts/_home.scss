@@ -1,0 +1,65 @@
+.home-container{
+    height: 100vh;
+    padding: 1em;
+
+    @include desktop{
+        padding: .1em;
+    }
+
+ 
+
+   .btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+    position: relative;
+    top: 18em;
+    @include tablet{
+        display: none;
+    }
+
+        .register-btn{
+            background: $color_primary-300;
+            border: 2px solid $color_primary-300;
+            outline: none;
+            padding: 1em;
+            width: 300px;
+            border-radius: 25px;
+            color: $color_tertiary-600;
+            font-size: $sm-font-size;
+            font-family: $font-family-mont;
+            font-weight: 600;
+            position: relative;
+            transition: all .5s ease-in-out;
+            // margin-top: 10em;
+
+            
+            &:hover{
+                border: 2px solid $color_tertiary-500;
+                background: rgba($color: $color_tertiary-200, $alpha: 0);
+                cursor: pointer;
+            }
+        }
+
+        .sign-in-btn{
+            background: none;
+            padding: 1em;
+            width: 300px;
+            border-radius: 25px;
+            color: $color_tertiary-300;
+            font-size: $sm-font-size;
+            font-family: $font-family-roboto;
+            font-weight: 500;
+            transition: all .5s ease-in-out;
+
+            &:hover{
+                background: $color_tertiary-300;
+                color: rgba($color: $color_tertiary-200, $alpha: 0.5);
+                cursor: pointer;
+            }
+        }
+   }
+}
+

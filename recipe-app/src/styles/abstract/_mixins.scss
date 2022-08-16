@@ -1,0 +1,25 @@
+ @mixin tablet {
+    @media(min-width: $tb){
+        @content;
+    }
+ }
+
+
+ @mixin desktop {
+    @media(min-width: $dsk){
+        @content;
+    }
+ }
+
+//  @mixin background-opacity($color, $opacity){
+//     background: $color;
+//     background: rgba($color, $alpha);
+//  }
+
+// @mixin background($imgpath,$position:0 0,$repeat: no-repeat) {
+//     background: {
+//         image: url($imgpath);
+//         position: $position;
+//         repeat: $repeat;
+//     }
+// }

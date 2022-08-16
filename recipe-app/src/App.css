@@ -1,0 +1,13 @@
+/* body{
+    background: url('/recipe-app/public/resources/images/backg.jpg');
+} */
+
+/* input:focus ~ span,
+input :valid ~ span{
+    color: aqua;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.7rem;
+    padding: 0 10px;
+    border-left: 1px solid blue;
+    border-right: 1px solid black;
+} */
