@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import { interaction, util} from "../../component/ComponentBarrel";
-import { Link } from "react-router-dom";
+import { Link, Outlet, Route, Routes } from "react-router-dom";
 
 // components 
 import { FormSection } from "../fomsection";
@@ -20,31 +20,51 @@ const stylez = {
 
 // state
 const [formToggle, setFormToggle] = useState(false);
-// const [formToggle1, setFormToggle1] = useState(false)
-// const showForm = ()=>{
-//     if(window.innerWidth >773){
-//         console.log('mem')
-//     }
 
-
-// }
-// useEffect(()=>{
-//    window.addEventListener('resize', showForm());
-//    return()=>window.addEventListener('resize', showForm())
-// },[])
 
 
     return(
         <>
             <div style={stylez} className="home-container">
+            {/* <Outlet/> */}
                 <FormSection sign='sign-up'/>
                 <div className="btn">
-                    <interaction.Button class='register-btn' label={Register}/>
+                <Link to='home '><interaction.Button class='register-btn' label={Register}/></Link>
                     <Link to='/'><interaction.Button class='sign-in-btn' label={Register} /></Link>
                 </div>
             </div>
+          
            
         </>
 
     )
 }
+
+
+
+
+
+
+
+// function getWindowDimensions() {
+//     const { innerWidth: width, innerHeight: height } = window;
+//     return {
+//       width,
+//       height
+//     };
+//   }
+  
+//   export default function useWindowDimensions() {
+//     const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+  
+//     useEffect(() => {
+//       function handleResize() {
+//         setWindowDimensions(getWindowDimensions());
+//       }
+  
+//       window.addEventListener('resize', handleResize);
+//       return () => window.removeEventListener('resize', handleResize);
+//     }, []);
+  
+//     return windowDimensions;
+//   }

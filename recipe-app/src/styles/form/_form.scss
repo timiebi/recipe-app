@@ -1,7 +1,7 @@
 
 
 .form_section{
-    // display: none;
+    display: none;
     @include tablet{
         display: block;
     }
@@ -73,7 +73,7 @@
                     border: none;
                     background: rgba($color_tertiary-200, $alpha: .5);
                     width: 90%;
-                    &:focus{
+                    &:focus, &:valid{
                         border:1.5px solid $color_primary-300;
                         background-color: $color_tertiary-700;
                     }

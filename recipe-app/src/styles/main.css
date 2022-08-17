@@ -57,6 +57,9 @@
   cursor: pointer;
 }
 
+.form_section {
+  display: none;
+}
 @media (min-width: 773px) {
   .form_section {
     display: block;
@@ -120,7 +123,7 @@
   background: rgba(118, 116, 116, 0.5);
   width: 90%;
 }
-.form_section .form-section_container .form-field .input-container input:focus {
+.form_section .form-section_container .form-field .input-container input:focus, .form_section .form-section_container .form-field .input-container input:valid {
   border: 1.5px solid #f57003;
   background-color: #C4C4C4;
 }
@@ -145,4 +148,88 @@
 }
 .form_section .form-section_container .form-field p {
   text-align: center;
+}
+
+.mobile-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mobile-form .mobile-form-field {
+  width: 20rem;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 1em;
+  margin: 0.8em;
+  margin-top: 3em;
+  border-radius: 0 8px 8px 0;
+}
+.mobile-form .mobile-form-field h2 {
+  font-family: "Stylish", sans-serif;
+  width: 10rem;
+  text-align: center;
+  margin-left: 3em;
+  color: #f57003;
+}
+.mobile-form .mobile-form-field .mobile-input-container {
+  margin: 0.6em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mobile-form .mobile-form-field .mobile-input-container input {
+  padding: 0.8em;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background: #767474;
+  width: 15rem;
+}
+.mobile-form .mobile-form-field .link {
+  display: flex;
+  justify-content: center;
+  margin: 1.8em 1.8em 1em 2em;
+  position: relative;
+  right: 5px;
+  text-decoration: none;
+}
+.mobile-form .mobile-form-field .link button {
+  padding: 1em;
+  width: 16.5rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background: #f57003;
+  cursor: pointer;
+}
+.mobile-form .mobile-form-field p {
+  text-align: center;
+}
+
+.search {
+  margin-top: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.search input {
+  padding: 0.7em;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background: #252525;
+  color: #EDF0F2;
+}
+.search button {
+  padding: 0.7em;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background: #f57003;
+  cursor: pointer;
+}
+.search button:hover {
+  color: #EDF0F2;
 }/*# sourceMappingURL=main.css.map */

@@ -1,6 +1,6 @@
 const image ={
     HomeBackground: "/resources/images/backg.jpg",
-    Bf: "/resource/images/bf.jpg"
+    Bf: "/resources/images/bf.jpg"
 }
 
 

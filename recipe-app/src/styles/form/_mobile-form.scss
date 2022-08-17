@@ -1,0 +1,66 @@
+.mobile-form{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    .mobile-form-field{
+        width: 20rem;
+        background: rgba($color_tertiary-100, $alpha: .7);
+        padding: 1em;
+        margin: .8em;
+        margin-top: 3em;
+        border-radius: 0 8px 8px 0;
+        h2{
+            font-family: $font-family-style;
+            width: 10rem;
+            text-align: center;
+            margin-left: 3em;
+            color: $color_primary-300;
+            // text-transform: uppercase;
+        }
+        @include tablet{
+        //  display: none;
+        }
+    
+        .mobile-input-container{
+            margin: .6em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            input{
+                padding: .8em;
+                border-radius: 5px;
+                border: none;
+                outline: none;
+                background: $color_tertiary-200;
+                width: 15rem;
+            }
+        }
+        .link{
+            display: flex;
+            justify-content: center;
+            margin: 1.8em 1.8em 1em 2em;
+            position: relative;
+            right: 5px;
+            text-decoration: none;
+            button{
+                padding: 1em;
+                
+                width: 16.5rem;
+                border-radius: 5px;
+                outline: none;
+                border: none;
+        
+                background: $color_primary-300;
+                cursor: pointer;
+              
+            }
+        }
+    
+        p{
+            text-align: center;
+        }
+    }
+}

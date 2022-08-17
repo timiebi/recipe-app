@@ -1,6 +1,7 @@
-import { Home } from "../layout/home";
+import { Home, MobileFormHome } from "../layout/home";
 import image from '../Data';
 import { useState } from "react";
+import { Routes, Route } from "react-router-dom"; 
 
 
 
