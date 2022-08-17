@@ -213,6 +213,7 @@
   justify-content: center;
   align-items: center;
   gap: 1em;
+  margin-bottom: 5em;
 }
 .search input {
   padding: 0.7em;
