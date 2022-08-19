@@ -1,0 +1,46 @@
+.recipe-section{
+    padding-top: 3.5em;
+    overflow: auto;
+    background-color: $color_tertiary-400;
+    opacity: .95;
+    display: flex;
+    justify-content: center;
+    // width: 80%;
+    .recipe-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 85%;
+        text-align: center;
+        flex-wrap: wrap;
+
+        img{
+            border-radius: $border_radius-200;
+            width: 15rem;
+        }
+        .recipe-info{
+            h1{
+                font-family: $font-family-fraunces;
+                font-weight: 600;
+                font-size: $sm1-font-size;
+                color: $color_primary-300;
+                text-align: center;
+            }
+            p{
+                font-family: $font-family-roboto;
+                font-weight: 500;
+                font-size: $sm-font-size;
+                color: $color_tertiary-200 ;
+                text-align: center;
+            }
+            .list-container{
+                font-size: $xsm-font-size;
+                font-weight: 600;
+                font-family: $font-family-inter;
+                width: 14rem;
+                text-align: left;
+                color: $color_tertiary-500;
+            }
+        }
+    }
+}

@@ -60,14 +60,16 @@ const formAction = (e)=>{
                                 <span>Password</span>
                             </div>
                             {/* <interaction.Button class='submit-btn' label={sign} /> */}
-                            <interaction.Button disabled={
-                                     !firstName
-                                     || !lastName 
-                                     || !email 
-                                     ||!password} 
-                                     onclick={Handclick} 
-                                     label={sign}
-                                     />
+                            <Link to='/recipe'className="link" >
+                                <interaction.Button disabled={
+                                        !firstName
+                                    || !lastName 
+                                    || !email 
+                                    ||!password} 
+                                    label={sign} 
+                                    onclick={Handclick}
+                                    />
+                            </Link>
                             <p>Already have an account? <Link to='/'>Login</Link></p>
                         </form>
                     </div>

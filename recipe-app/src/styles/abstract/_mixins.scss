@@ -16,10 +16,12 @@
 //     background: rgba($color, $alpha);
 //  }
 
-// @mixin background($imgpath,$position:0 0,$repeat: no-repeat) {
+// @mixin searchBackground($imgpath,$position:center, $repeat: no-repeat, $attachment: fixed, $size: cover ) {
 //     background: {
 //         image: url($imgpath);
 //         position: $position;
 //         repeat: $repeat;
+//         background-attachment: $attachment;
+//         background-size: $size;
 //     }
 // }

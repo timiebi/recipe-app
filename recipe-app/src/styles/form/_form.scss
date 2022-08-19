@@ -103,6 +103,10 @@
 
                 background: $color_primary-300;
                 cursor: pointer;
+                @include desktop{
+                    width: 24rem;
+                    margin-left: .1em;
+                }
               
             }
 
