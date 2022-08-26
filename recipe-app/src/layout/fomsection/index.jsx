@@ -44,20 +44,16 @@ const formAction = (e)=>{
                         </div>
                         <form onSubmit={formAction} className="form-field">
                             <div className="input-container">
-                                <input type="text" required = 'required' value={firstName} onChange={firstNameValue} />
-                                <span>First Name</span>
+                                <input type="text" required = 'required' value={firstName} onChange={firstNameValue} placeholder="First Name" />
                             </div>
                             <div className="input-container">
-                                <input type="text" required = 'required' value={lastName} onChange={lastNameValue} />
-                                <span>Last Name</span>
+                                <input type="text" required = 'required' value={lastName} onChange={lastNameValue} placeholder="Last Name" />
                             </div>
                             <div className="input-container">
-                                <input type="email" required = 'required' value={email} onChange={emailValue} />
-                                <span className="email">Email</span>
+                                <input type="email" required = 'required' value={email} onChange={emailValue} placeholder="Email" />
                             </div>
                             <div className="input-container">
-                                <input type="password" required = 'required' value={password} onChange={passwordValue} />
-                                <span>Password</span>
+                                <input type="password" required = 'required' value={password} onChange={passwordValue} placeholder="Password" />
                             </div>
                             {/* <interaction.Button class='submit-btn' label={sign} /> */}
                             <Link to='/recipe'className="link" >

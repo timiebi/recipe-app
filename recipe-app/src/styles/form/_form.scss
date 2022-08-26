@@ -50,9 +50,10 @@
                 justify-content: center;
             }
             .input-container{
+                margin: .5em;
                 
-                input:focus ~ span,
-                input :valid ~ span{
+                input:focus ~ &::placeholder,
+                input :valid ~ &::placeholder{
                     color: $color_tertiary-400;
                     // transform: translateX(10px) translateY(-7px);
                     font-size: 0.8rem;
@@ -79,7 +80,7 @@
                     }
                    
                 }
-                span{
+                &::placeholder{
                     position: relative;
                     left: 2em;
                     pointer-events: none;

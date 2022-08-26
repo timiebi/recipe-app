@@ -103,8 +103,32 @@
     justify-content: center;
   }
 }
-.form_section .form-section_container .form-field .input-container input:focus ~ span,
-.form_section .form-section_container .form-field .input-container input :valid ~ span {
+.form_section .form-section_container .form-field .input-container {
+  margin: 0.5em;
+}
+input:focus ~ .form_section .form-section_container .form-field .input-container::-moz-placeholder, input :valid ~ .form_section .form-section_container .form-field .input-container::-moz-placeholder {
+  color: #252525;
+  font-size: 0.8rem;
+  padding: 0.2em 12px;
+  border-left: 2px solid #f57003;
+  border-right: 2px solid #f57003;
+  position: relative;
+  bottom: 1.2em;
+  font-weight: 600;
+  background-color: #C4C4C4;
+}
+input:focus ~ .form_section .form-section_container .form-field .input-container:-ms-input-placeholder, input :valid ~ .form_section .form-section_container .form-field .input-container:-ms-input-placeholder {
+  color: #252525;
+  font-size: 0.8rem;
+  padding: 0.2em 12px;
+  border-left: 2px solid #f57003;
+  border-right: 2px solid #f57003;
+  position: relative;
+  bottom: 1.2em;
+  font-weight: 600;
+  background-color: #C4C4C4;
+}
+input:focus ~ .form_section .form-section_container .form-field .input-container::placeholder, input :valid ~ .form_section .form-section_container .form-field .input-container::placeholder {
   color: #252525;
   font-size: 0.8rem;
   padding: 0.2em 12px;
@@ -127,7 +151,21 @@
   border: 1.5px solid #f57003;
   background-color: #C4C4C4;
 }
-.form_section .form-section_container .form-field .input-container span {
+.form_section .form-section_container .form-field .input-container::-moz-placeholder {
+  position: relative;
+  left: 2em;
+  pointer-events: none;
+  bottom: 1.9em;
+  text-transform: uppercase;
+}
+.form_section .form-section_container .form-field .input-container:-ms-input-placeholder {
+  position: relative;
+  left: 2em;
+  pointer-events: none;
+  bottom: 1.9em;
+  text-transform: uppercase;
+}
+.form_section .form-section_container .form-field .input-container::placeholder {
   position: relative;
   left: 2em;
   pointer-events: none;
